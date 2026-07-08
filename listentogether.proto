@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package listentogether;
 
-option go_package = "github.com/nyxiereal/metroserver/proto";
+option go_package = "github.com/MetrolistGroup/metroserver/proto";
 option java_package = "com.metrolist.music.listentogether.proto";
 option java_outer_classname = "Listentogether";
 option java_multiple_files = false;
@@ -56,6 +56,8 @@ message JoinRoomPayload {
   string room_code = 1;
   string username = 2;
 }
+
+message LeaveRoomPayload {}
 
 message ApproveJoinPayload {
   string user_id = 1;
